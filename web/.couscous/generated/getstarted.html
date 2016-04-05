@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CME 193 - Scientific Python</title>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/highlight.tomorrow-night.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="/">
+                CME 193 - Scientific Python
+                <small class="hidden-xs hidden-sm">
+                    Stanford University
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                                                    <p class="text-muted">
+                                Course Information
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="/./index.html">
+                                            Course Description
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="/./syllabus.html">
+                                            Syllabus
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="/./lectures.html">
+                                            Lectures
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="/./homework.html">
+                                            Homework
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Other Links
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="/./getstarted.html">
+                                            Getting Started
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        
+                    </nav>
+
+                
+                <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="getting-started">Getting started</h1>
+<p>Getting started with Python can be a little confusing, hopefully this webpage helps to get you going.</p>
+<h2 id="requirements">Requirements</h2>
+<p>There are two components to running Python (locally).</p>
+<p>. First, you need Python itself, obviously. For both Mac and Windows, it's easiest to install Python using [<a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> Anaconda].
+. Second, you need an editor to write your code. This is independent of Python, and in fact you can use your editor to write code in other languages as well. I recommend using [<a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a> Sublime Text]!</p>
+<p>Another option is to run Python in the cloud (see below)</p>
+<h2 id="installing-python">Installing Python</h2>
+<p>In this class, we will be using Python 2.7.
+The following two methods are preferred for installing Python.</p>
+<p>Note that even though Macs come with Python, it is still recommended to
+install Python using either Anaconda or [<a href="http://docs.python-guide.org/en/latest/starting/install/osx/">http://docs.python-guide.org/en/latest/starting/install/osx/</a> Homebrew].</p>
+<h3 id="anaconda">Anaconda</h3>
+<p>One convenient method to set up your Python environment is using a free, pre-packaged
+distribution, such as [<a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> Anaconda] (Click the big bright blue button on the top right).
+This has the advantage that many relevant packages come pre-installed, possibly saving you some headaches later on. It also includes <em>pip</em>, the Python package manager.</p>
+<p>Note that while Anaconda also comes with the Anaconda launcher and a bunch of other tools, you should not be using any of these for this course.
+We only use Anaconda for the convenience of installation of Python and the main packages, not the other stuff that comes with it as well.</p>
+<p>If you are a Windows user, I highly recommend using Anaconda, as Windows is notorious for not playing nice with Python.</p>
+<h3 id="homebrew-mac-only">Homebrew (Mac only)</h3>
+<p>If you want a bit more control over your Python distribution, then using Homebrew to install Python is useful. This is what I and a lot of devs do.</p>
+<p>It also installs the package manager <em>pip</em> for you, which is very useful.</p>
+<p>However, it does not come with additional modules, such as <em>numpy</em> or <em>scipy</em>,
+though they can be installed easily using <em>pip</em>.</p>
+<p>A short tutorial can be found [<a href="http://docs.python-guide.org/en/latest/starting/install/osx/">http://docs.python-guide.org/en/latest/starting/install/osx/</a> here].</p>
+<h2 id="editor">Editor</h2>
+<p>To write code, you need an editor.
+While there are many options, old and new, [<a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a> Sublime Text] is one you can't go wrong with. This is what I use, and it is fantastic in terms of productivity. <em>Note</em> you can use it for free even though they ask you to renew.</p>
+<p>A script is a simple file with text, such as</p>
+<pre><code>{hello.py}{python}
+a #'Hello,'
+b #'world!'
+print a + ' ' + b</code></pre>
+<p>which you can save to your <em>filesystem</em> using the editor.</p>
+<h2 id="running-code">Running code</h2>
+<p>Now that you know how to write Python scripts, it's time to learn how to run them using Python.</p>
+<h3 id="mac">Mac</h3>
+<p>Open the <em>terminal</em>, for example by searching for +terminal+ using the spotlight search function.</p>
+<p>To open the interpreter, simply enter <em>python</em> (this is the interactive mode). </p>
+<p>To run a script, navigate to the folder that contains your script. Then simply run +python script.py+, given that +script.py+ is the name of your script.</p>
+<p>Online, you can find some good resources that introduce the terminal, such as
+. [<a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/">http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/</a> How to Use Terminal: The Basics]
+. [<a href="http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">http://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855</a> Navigating the Terminal: A Gentle Introduction]
+. [<a href="http://www.maclife.com/article/feature/25_terminal_tips_every_mac_user_should_know">http://www.maclife.com/article/feature/25_terminal_tips_every_mac_user_should_know</a> 25 Terminal Tips Every Mac User Should Know]
+. [<a href="http://jolts.stanford.edu/48/getting_started_with_linux">http://jolts.stanford.edu/48/getting_started_with_linux</a> Getting started with Linux, Section 3 and beyond] (Note that Linux and Mac have the same terminal)
+. [<a href="https://practicalunix.org/">https://practicalunix.org/</a> Stanford course CS 1U 'Practical Unix']</p>
+<h3 id="windows">Windows</h3>
+<p>Open the <em>command prompt</em> by searching for +cmd+ in the Start menu.
+This is the Windows version of the terminal.</p>
+<p>To open the interpreter, similar to the Mac terminal, we simply run +python+.</p>
+<p>To run a script, navigate to the folder that contains your script, and then run +python script.py+, given that +script.py+ is the file name.</p>
+<p>Also for Windows, there are some good resources about the command prompt</p>
+<p>. [<a href="http://dosprompt.info/">http://dosprompt.info/</a> Command Prompt Basics - A Getting Started Guide]
+. [<a href="http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html">http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html</a> Windows Command Prompt in 15 Minutes]</p>
+<p>If you are using Windows and you're having trouble setting up Python, I recommend using Python <em>in the cloud</em>, as I'll discuss later.</p>
+<h2 id="pip">Pip</h2>
+<p>To install new modules, make sure you have +pip+ installed.
+It comes with both Anaconda and Homebrew, so if you have used either of them, you are good.
+Otherwise, it is also rather straightforward to install +pip+: See the [<a href="http://pip.readthedocs.org/en/latest/installing.html">http://pip.readthedocs.org/en/latest/installing.html</a> documentation].</p>
+<p>Then, open the terminal / command prompt, and run +pip install module+, where +module+ is the name of the module.
+Note that you cannot run this from inside the Python interpreter.</p>
+<h2 id="python-in-the-cloud">Python in the cloud</h2>
+<p>When you have trouble getting Python up and running, or if you have Windows and
+would like to use a Unix environment, then there is an alternative: using your browser.
+There are several possibilities, but to be on the same page, I suggest you use [c9.io Cloud 9].
+Cloud 9 will host your development environment on the cloud for free.</p>
+<p>Please create an account at [<a href="http://c9.io">http://c9.io</a> Cloud 9] if you are not able to run Python locally,
+so you can at least get started.</p>
+<h2 id="windows-users">Windows Users</h2>
+<p>If you are a Windows user and are serious about taking this <em>and</em> other computer classes, I recommend partitioning your HD and running vanilla Linux on one partition. It will make your life a lot easier. </p>
+<p>If the install guides for Anaconda fail, and some Googling leads to nothing of utility, I highly suggest running with a cloud-based option.</p>
+<h2 id="farmshare">Farmshare</h2>
+<p>Another option available to everyone is [<a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/Main_Page">https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/Main_Page</a> farmshare]. You simply need to <code>ssh</code> in, and you will have a full working installation of python. Thir requires some Linux skills, so follow [<a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide">https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide</a> this guide] to getting started.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yandex.st/highlightjs/7.5/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
