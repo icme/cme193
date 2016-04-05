@@ -1,6 +1,6 @@
 template:
-    directory: .
-    # url: https://github.com/CouscousPHP/Template-Light
+    # directory: .
+    url: https://github.com/CouscousPHP/Template-Dark
 
 title: CME 193 - Scientific Python
 subTitle: Stanford University
