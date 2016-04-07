@@ -16,7 +16,7 @@ git rebase origin/gh-pages
 git checkout master nb
 git stash
 git merge stash
-# git commit -am "Syncing nb/"
+git stash drop
 
 git push origin
 
