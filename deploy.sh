@@ -17,6 +17,8 @@ git checkout master nb
 git stash
 git merge stash
 git stash drop
+git add nb
+git commit -am "sync nb/ root"
 
 git push origin
 
