@@ -25,6 +25,7 @@ if [[ $1 == "refresh" ]]; then
 	git add nb
 	git checkout master nb
 	git add nb
+	git commit -am "full refresh complete"
 	git push
 	git stash drop
 
