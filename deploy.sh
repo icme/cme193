@@ -17,7 +17,8 @@ if [[ $1 == "refresh" ]]; then
 	git fetch origin
 	git rebase origin/gh-pages
 
-
+	rm nb
+	git commit -am "full refresh"
 	git checkout master nb
 	git stash
 	git merge stash
