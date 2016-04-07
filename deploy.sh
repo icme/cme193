@@ -8,19 +8,27 @@ WEBDIR=./web
 cd $WEBDIR
 couscous deploy
 
-cd $ROOTDIR
-git checkout gh-pages
-git fetch origin
-git rebase origin/gh-pages
 
-git checkout master nb
-git stash
-git merge stash
-git stash drop
-git add nb
-git commit -am "sync nb/ root"
 
-git push origin
+if [[ $1 == "refresh" ]]; then
+	echo "running REFRESH on nb/"
+	cd $ROOTDIR
+	git checkout gh-pages
+	git fetch origin
+	git rebase origin/gh-pages
 
-git checkout master
+
+	git checkout master nb
+	git stash
+	git merge stash
+	git add nb
+	git checkout master nb
+	git add nb
+	git push
+	git stash drop
+
+	git checkout master
+fi
+
+
 
