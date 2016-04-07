@@ -14,7 +14,9 @@ git fetch origin
 git rebase origin/gh-pages
 
 git checkout master nb
-git commit -am "Syncing nb/"
+git stash
+git merge stash
+# git commit -am "Syncing nb/"
 
 git push origin
 
