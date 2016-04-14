@@ -1,0 +1,36 @@
+template:
+    directory: .
+    # url: https://github.com/CouscousPHP/Template-Dark
+
+title: CME 193 - Scientific Python
+subTitle: Stanford University
+baseUrl: ./
+
+# The left menu bar
+menu:
+    sections:
+        main:
+            name: Course Information
+            items:
+                course_description:
+                    text: Course Description
+                    # You can use relative urls
+                    relativeUrl: index.html
+
+                syllabus:
+                    text: Syllabus
+                    # You can use relative urls
+                    relativeUrl: syllabus.html
+                lectures:
+                    text: Lectures
+                    # Or absolute urls
+                    relativeUrl: lectures.html
+                homework:
+                    text: Homework
+                    relativeUrl: homework.html
+        other:
+            name: Other Links
+            items:
+                get_started: 
+                    text: Getting Started
+                    relativeUrl: getstarted.html
