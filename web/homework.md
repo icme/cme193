@@ -4,4 +4,4 @@ currentMenu: homework
 
 #Homework
 
-There will be two homeworks that are required to fulfill the CME 193 requirements.
+* Homework 1, due 4/18 ([Zip](./hw/hw1.zip))

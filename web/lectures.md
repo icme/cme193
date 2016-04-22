@@ -15,4 +15,6 @@ Please check regularly, as lectures are added as we progress.
 
 * Lecture 4 (4/14) [[Jupyter Notebook](./nb/lecture-4.ipynb), [Binder](https://app.mybinder.org:80/2805480753/notebooks/nb/lecture-4.ipynb), PDF, [Presentation](./nb/lecture-4.slides.html)]
 
-* Lecture 5 (4/19) **no class**
+* Lecture (4/19) **no class**
+
+* Lecture 5 (4/21) [[Jupyter Notebook](./nb/lecture-5.ipynb), [Binder](), PDF, [Presentation](./nb/lecture-5.slides.html)]
