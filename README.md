@@ -1,3 +1,3 @@
-# CME 193
+# CME 193 - Introduction to Scientific Python
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/icme/cme193)
+Welcome to the course GitHub!
