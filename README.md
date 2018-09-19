@@ -1,3 +1,3 @@
-# CME 193
+# CME 193 - Scientific Python
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/icme/cme193)
+Please visit the course website: [https://icme.github.io/cme193/](https://icme.github.io/cme193/)

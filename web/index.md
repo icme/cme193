@@ -4,17 +4,15 @@ currentMenu: course_description
 
 # Course description
 
-This short course runs for four weeks of the quarter (starting 10/2) and is
-offered each quarter during the academic year.
-It is recommended for people who have programming experience who want to learn scientific programming and data science tools in Python.
-
-Lectures will be interactive using [Jupyter Notebooks](http://jupyter.org/) with a focus on learning by example, and assignments will be application-driven.
+This course is recommended for students who are familiar with programming at least at the level of CS106A and want to translate their programming knowledge to Python with the goal of becoming proficient in the scientific computing and data science stack. Lectures will be interactive with a focus on real world applications of scientific computing. Technologies covered include Numpy, SciPy, Pandas, Scikit-learn, and others. Topics will be chosen from Linear Algebra, Optimization, Machine Learning, and Data Science. Prior knowledge of programming will be assumed, and some familiarity with Python is helpful, but not mandatory.
 
 ## Course information
 
 CME 193 - Introduction to Scientific Python - Fall 2018
 - Location: [420-040](https://campus-map.stanford.edu/?srch=420-040)
-- Times: Tue, Thurs 10:30 AM - 11:50 AM
+- Time: Tu/Th 10:30 AM - 11:50 AM
+- Units: 1
+- Grading: Credit/No-Credit
 - **SURVEY, PLEASE TAKE** ([link](http://goo.gl/forms/ggfdEUYxQL))
 
 Instructor:
@@ -24,54 +22,49 @@ Office hours: by appointment for now, with scheduled time TBA.
 
 ## Prerequisites
 
-There are no formal prerequisites. This means we won't check you're previous programming experience.
+### Programming
 
-**However**, this quarter we are raising the difficulty of the material, and we expect a higher level of programming maturity than we have in the past.
+There are no formal prerequisites. This means we won't check your previous programming experience.
 
-Specifically, we expect programming *at least* at the level of CS106A, and the higher the level the better. Ideally, you've seen some Python in the past, though this is not necessary.
+**However**, the course material will assume prior programming experience, and will assume you are comfortable with
 
-From the programming side, you should be confortable with:
-
-* While Loops
-* For Loops
-* Dictionaries / Associative arrays
 * Basic notions (variables, types, etc.)
+* Loops
+* Dictionaries / Associative arrays
 * **The UNIX/Linux command line** - this course assumes you know your way around!
 
-If you are fluent / very comfortable with any of
+Ideally, you already are comfortable programming in at least one language (C, C++, fortran, Julia, Matlab, R, Java, ...), and perhaps have seen some basic Python before.
 
-* R
-* Java
-* C++
-* C
-* Go
-* Matlab
-* Ruby
-
-you should be more than fine.
-
-From the math / statistics side, you technically don't need any exposure, but towards the end of the class, I'll be talking about data science in Python, so I will assume knowledge of linear algebra, some optimization, and some statistics / regression modeling.
-
-If you haven't worked with Python in the past, I recommend completing an introduction of Python on [Codeacademy](http://www.codecademy.com/en/tracks/python)
+If you haven't worked with Python in the past, you may wish to complete an introduction to Python on [Codeacademy](http://www.codecademy.com/en/tracks/python)
 and/or [Udacity](https://www.udacity.com/course/cs101).
 
-## Course Policy
+### Scientific Computing
 
-The course consists of 8 lectures. We will rely heavily on IPython notebooks for lecture!
+This is a course on scientific computing with Python.  This will assume you
+* Have some basic familiarity with linear algebra, optimization, and statistics
+* Have some familiarity with a scientific computing application (simulations, machine learning, etc.)
 
-There will be two homeworks that will focus on real-world applications of the concepts learned in class.
+## Format
 
-You are encouraged to take the class for credit, as it forces you to practice with
-Python and that's the best way to learn. However, anyone is also welcome to audit
-the class!
+This short course runs for four weeks of the quarter (starting 10/2) and is offered each quarter during the academic year.
 
-## Honor code
+Lectures will be interactive using [Jupyter Notebooks](http://jupyter.org/) with a focus on learning by example, and assignments will be application-driven.
 
-You are strongly encouraged to work together and discuss both homeworks.
+We'll typically devote some time during class to working on exercises, so you can ask for help if you're stuck.
 
-However, the homeworks should be your own work and all the code
-you submit should be written by yourself. Of course, you are free, and encouraged, to search online to solutions to
-problems you run into (though not full solutions to the exercises), and
-use those.
 
-A simple example would be to look up the syntax of a `for` loop or how to initialize a `numpy.ndarray` with zeros.
+## Grading
+
+This a 1-unit workshop style course, offered on a credit/no-credit basis.  To receive credit:
+* Come to class and participate (we know you may have occasional conflicts)
+* Make a reasonable attempt at the assignments (3 or 4 total)
+
+The goal is to give you some practice and experience with the content of the course, without overwhelming you with work.
+
+## Stanford Policies
+
+### Honor Code
+This course is intended to be collaborative.  You can (and should) work with other students in class and on homework.  You should turn in your own solutions (don't copy others). If you worked closely with someone or found an answer on the web, please acknowledge the source of your solution.
+
+### Students with Documented Disabilities
+Students with Documented Disabilities: Students who may need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE). Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty. Unless the student has a temporary disability, Accommodation letters are issued for the entire academic year. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations. The OAE is located at 563 Salvatierra Walk (phone: 723-1066, URL: https://oae.stanford.edu/).

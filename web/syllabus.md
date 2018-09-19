@@ -16,4 +16,4 @@ currentMenu: syllabus
 	* Curve fitting
 * Data Science in Python
 	* Data storage / manipulation / handling with Pandas
-	* Visualization / plotting with Seaborn and Matplotlib
+	* Visualization / plotting with Matplotlib and Plotly
