@@ -2,7 +2,7 @@
 
 Welcome to the course GitHub!  This git repository will be used to host course materials.
 
-[Syllabus](syllabus.md)
+You can view the course website at [https://icme.github.io/cme193/](https://icme.github.io/cme193/)
 
 
 You can clone this repository to your machine, so you can run the examples:
