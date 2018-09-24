@@ -4,16 +4,17 @@ currentMenu: syllabus
 
 #Syllabus
 
-##Set Topics
+This is a course on scientific computing using Python.  We'll cover aspects of the Python language as they are relevant to the material.  The following schedule should be seen as a high-level guide to what we'll do in 8 lectures, but is not set in stone.
 
-* How to develop in Python
-* Overview of built-in Python data structures
-* Numpy and advanced array / matrix / tensor manipulation
-	* Applications in Linear Algebra, Optimization
-* Scipy
-	* Optimization
-	* Image Manipulation
-	* Curve fitting
-* Data Science in Python
-	* Data storage / manipulation / handling with Pandas
-	* Visualization / plotting with Matplotlib and Plotly
+1. Introduction to Python & NumPy
+2. Dense Linear Algebra in NumPy
+3. Intro to SciPy - Dense & Sparse linear algebra
+4. Optimization I - Scipy.optimize
+5. Pandas, Sckit learn
+6. Tensorflow
+7. Optimization II - ortools
+8. TBD (Survey)
+
+We'll intersperse the visualization libraries:
+* Matplotlib
+* Plotly

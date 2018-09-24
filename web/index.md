@@ -8,32 +8,27 @@ This course is recommended for students who are familiar with programming at lea
 
 ## Course information
 
+**This course starts the second week of the quarter on Tuesday 10/2**
+
 CME 193 - Introduction to Scientific Python - Fall 2018
 - Location: [420-040](https://campus-map.stanford.edu/?srch=420-040)
 - Time: Tu/Th 10:30 AM - 11:50 AM
 - Units: 1
 - Grading: Credit/No-Credit
-- **SURVEY, PLEASE TAKE** ([link](http://goo.gl/forms/ggfdEUYxQL))
 
 Instructor:
 [Brad Nelson](https://stanford.edu/~bjnelson/) (`bradnelson {at} stanford {dot} edu`)
 
+Assistant: Rahul Sarkar (`rsarkar {at} stanford {dot} edu`)
+
 Office hours: by appointment for now, with scheduled time TBA.
 
 ## Prerequisites
-
 ### Programming
 
 There are no formal prerequisites. This means we won't check your previous programming experience.
 
-**However**, the course material will assume prior programming experience, and will assume you are comfortable with
-
-* Basic notions (variables, types, etc.)
-* Loops
-* Dictionaries / Associative arrays
-* **The UNIX/Linux command line** - this course assumes you know your way around!
-
-Ideally, you already are comfortable programming in at least one language (C, C++, fortran, Julia, Matlab, R, Java, ...), and perhaps have seen some basic Python before.
+**However**, the course material will assume prior programming experience.  Ideally, you already are comfortable programming in at least one language (C, C++, fortran, Julia, Matlab, R, Java, ...), and perhaps have seen some basic Python before.
 
 If you haven't worked with Python in the past, you may wish to complete an introduction to Python on [Codeacademy](http://www.codecademy.com/en/tracks/python)
 and/or [Udacity](https://www.udacity.com/course/cs101).
@@ -41,7 +36,7 @@ and/or [Udacity](https://www.udacity.com/course/cs101).
 ### Scientific Computing
 
 This is a course on scientific computing with Python.  This will assume you
-* Have some basic familiarity with linear algebra, optimization, and statistics
+* Have at least a basic familiarity with linear algebra, optimization, and statistics
 * Have some familiarity with a scientific computing application (simulations, machine learning, etc.)
 
 ## Format
