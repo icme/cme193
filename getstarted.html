@@ -75,6 +75,13 @@
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="getting-started">Getting started</h1>
 <p>Getting started with Python can be a little confusing, hopefully this page helps to get you going.</p>
+<p>In general, I am not going to tell you to do things one way.  This is because there are a variety of operating systems, and some of you may already have development environments set up in a particular way.  The best ways to troubleshoot installation and environment issues are:</p>
+<ol>
+<li>Consult the internet</li>
+<li>Consult a friend/neighbor with the same operating system</li>
+</ol>
+<p>Personally, I run Fedora (linux) on my machine.  Unless you are as well, you may find that I fall back on steps 1 and 2 above if you ask me for help.</p>
+<p>For anyone who is new to Python or maintaining any sort of development environment on a computer, I recommend Anaconda python.</p>
 <h2 id="installing-python">Installing Python</h2>
 <p>In this class, we will be using Python 3.6.  If you want to use a different version, you can try, but the material provided in class may not run with your different version.  In particular, if you are using Python 2, you are particularly likely to see things not work.  We recommend having some Python 3 interpreter available.</p>
 <p>In the terminal, you can check which python version you are currently using with</p>
@@ -84,12 +91,6 @@
 python3 -V # python 3 version</code></pre>
 <p>Following are a variety of methods you can use to install Python.  As far as this course is concerned, you can use whatever you want (if you already have system python or anaconda working for you, don't change just for the course).</p>
 <p>If you are new to Python, I recommend using Anaconda, regardless of operating system.  You can always change your mind later.  <a href="https://conda.io/docs/user-guide/tasks/manage-environments.html">Conda environments</a> are enough of a reason to at least give it a try.</p>
-<h3 id="homebrew-mac-only">Homebrew (Mac only)</h3>
-<p>If you want a bit more control over your Python distribution, then using Homebrew to install Python is useful.</p>
-<p>It also installs the package manager <em>pip</em> for you, which is very useful.</p>
-<p>However, it does not come with additional modules, such as <em>numpy</em> or <em>scipy</em>,
-though they can be installed easily using <em>pip</em>.</p>
-<p>A short tutorial can be found <a href="http://docs.python-guide.org/en/latest/starting/install/osx/">here</a>.</p>
 <h3 id="anaconda">Anaconda</h3>
 <p>One convenient method to set up your Python environment is using a free, pre-packaged distribution, such as <a href="https://www.anaconda.com/download/">Anaconda</a>.</p>
 <p>This has the advantage that many relevant packages come pre-installed, possibly saving you some headaches later on. It also includes <em>pip</em>, the Python package manager.</p>
@@ -98,6 +99,16 @@ We only use Anaconda for the convenience of installation of Python and the main 
 <p>If you are a Windows user, Anaconda is recommended, as Windows is notorious for not playing nice with Python.</p>
 <h3 id="system-package-manager-linux">System Package Manager (Linux)</h3>
 <p>If you're running Linux, you can just use your package manager (<em>apt-get</em>, <em>dnf</em>, etc.) to install Python. You can also often use your package manager to install Python packages instead of <em>pip</em>, but you may run into issues doing this.</p>
+<h3 id="homebrew-mac-only">Homebrew (Mac only)</h3>
+<p>If you want a bit more control over your Python distribution, then using Homebrew to install Python is useful.</p>
+<p>It also installs the package manager <em>pip</em> for you, which is very useful.</p>
+<p>However, it does not come with additional modules, such as <em>numpy</em> or <em>scipy</em>,
+though they can be installed easily using <em>pip</em>.</p>
+<p>A short tutorial can be found <a href="http://docs.python-guide.org/en/latest/starting/install/osx/">here</a>.</p>
+<h3 id="note-to-windows-users">Note to Windows Users</h3>
+<p>If you are a Windows user and are serious about taking this <em>and</em> other computer classes, I recommend using the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>.  In general, much scientific computing is done on clusters running some form of Linux.  The sooner you start using Linux, the better.</p>
+<p>If you really want to take the plunge, you can also partition your hard drive and add a linux distribution as a second operating system.</p>
+<p>If the install guides for Anaconda fail, and some Googling leads to nothing of utility, I highly suggest running with a cloud-based option.</p>
 <h2 id="editor">Editor</h2>
 <p>To write code, you need an editor.
 While there are many options, old and new, <a href="https://atom.io/">Atom</a> is (generally) what I use.</p>
@@ -108,6 +119,10 @@ print a + ' ' + b</code></pre>
 <p>which you can save to your <em>filesystem</em> using the editor.</p>
 <h2 id="running-code">Running code</h2>
 <p>Now that you know how to write Python scripts, it's time to learn how to run them using Python.</p>
+<h3 id="linux">Linux</h3>
+<p>Open a terminal.</p>
+<p>To open the interpreter, enter <code>python</code></p>
+<p>To run a script enter <code>python &lt;script&gt;.py</code> where <code>&lt;script&gt;.py</code> is the path to the script.</p>
 <h3 id="mac">Mac</h3>
 <p>Open the <em>terminal</em>, for example by searching for terminal using the spotlight search function.</p>
 <p>To open the interpreter, simply enter <em>python</em> (this is the interactive mode).</p>
@@ -138,17 +153,11 @@ Otherwise, it is also rather straightforward to install <code>pip</code>: See th
 <p>Then, open the terminal / command prompt, and run <code>pip install module</code>, where <code>module</code> is the name of the module.</p>
 <p><strong>Note that you cannot run this from inside the Python interpreter.</strong></p>
 <h2 id="python-in-the-cloud">Python in the cloud</h2>
-<p>When you have trouble getting Python up and running, or if you have Windows and
-would like to use a Unix environment, then there is an alternative: using your browser.
-There are several possibilities, but to be on the same page, I suggest you use [c9.io Cloud 9].
-Cloud 9 will host your development environment on the cloud for free.</p>
-<p>Please create an account at <a href="http://c9.io">Cloud 9</a> if you are not able to run Python locally,
-so you can at least get started.</p>
-<h2 id="windows-users">Windows Users</h2>
-<p>If you are a Windows user and are serious about taking this <em>and</em> other computer classes, I recommend using the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>.  In general, much scientific computing is done on clusters running some form of Linux.  The sooner you start using Linux, the better.</p>
-<p>If the install guides for Anaconda fail, and some Googling leads to nothing of utility, I highly suggest running with a cloud-based option.</p>
+<p>When you have trouble getting Python up and running, or if you have Windows and would like to use a Unix environment, then there is an alternative: using your browser.</p>
+<p>One option is <a href="https://aws.amazon.com/">AWS</a>.</p>
+<p>If anyone has other suggestions, I am open to them.</p>
 <h2 id="farmshare">Farmshare</h2>
-<p>Another option available to everyone is <a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/Main_Page">farmshare</a>. You simply need to <code>ssh</code> in, and you will have a full working installation of python. This requires some Linux skills, so follow <a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide">this guide</a> to getting started.</p>
+<p>Another option available to everyone is <a href="https://srcc.stanford.edu/farmshare2">farmshare</a>. You simply need to <code>ssh</code> in, and you will have a full working installation of python. This requires some Linux skills, so follow <a href="https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide">this guide</a> to getting started.</p>
                 </section>
 
             </div>

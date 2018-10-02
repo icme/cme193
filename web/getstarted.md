@@ -5,6 +5,14 @@ currentMenu: getting_started
 
 Getting started with Python can be a little confusing, hopefully this page helps to get you going.
 
+In general, I am not going to tell you to do things one way.  This is because there are a variety of operating systems, and some of you may already have development environments set up in a particular way.  The best ways to troubleshoot installation and environment issues are:
+1. Consult the internet
+2. Consult a friend/neighbor with the same operating system
+
+Personally, I run Fedora (linux) on my machine.  Unless you are as well, you may find that I fall back on steps 1 and 2 above if you ask me for help.
+
+For anyone who is new to Python or maintaining any sort of development environment on a computer, I recommend Anaconda python.
+
 ##Installing Python
 
 In this class, we will be using Python 3.6.  If you want to use a different version, you can try, but the material provided in class may not run with your different version.  In particular, if you are using Python 2, you are particularly likely to see things not work.  We recommend having some Python 3 interpreter available.
@@ -23,17 +31,6 @@ Following are a variety of methods you can use to install Python.  As far as thi
 
 If you are new to Python, I recommend using Anaconda, regardless of operating system.  You can always change your mind later.  [Conda environments](https://conda.io/docs/user-guide/tasks/manage-environments.html) are enough of a reason to at least give it a try.
 
-###Homebrew (Mac only)
-
-If you want a bit more control over your Python distribution, then using Homebrew to install Python is useful.
-
-It also installs the package manager *pip* for you, which is very useful.
-
-However, it does not come with additional modules, such as *numpy* or *scipy*,
-though they can be installed easily using *pip*.
-
-A short tutorial can be found [here](http://docs.python-guide.org/en/latest/starting/install/osx/).
-
 ###Anaconda
 
 One convenient method to set up your Python environment is using a free, pre-packaged distribution, such as [Anaconda](https://www.anaconda.com/download/).
@@ -48,6 +45,26 @@ If you are a Windows user, Anaconda is recommended, as Windows is notorious for 
 ### System Package Manager (Linux)
 
 If you're running Linux, you can just use your package manager (*apt-get*, *dnf*, etc.) to install Python. You can also often use your package manager to install Python packages instead of *pip*, but you may run into issues doing this.
+
+### Homebrew (Mac only)
+
+If you want a bit more control over your Python distribution, then using Homebrew to install Python is useful.
+
+It also installs the package manager *pip* for you, which is very useful.
+
+However, it does not come with additional modules, such as *numpy* or *scipy*,
+though they can be installed easily using *pip*.
+
+A short tutorial can be found [here](http://docs.python-guide.org/en/latest/starting/install/osx/).
+
+
+###Note to Windows Users
+
+If you are a Windows user and are serious about taking this *and* other computer classes, I recommend using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).  In general, much scientific computing is done on clusters running some form of Linux.  The sooner you start using Linux, the better.
+
+If you really want to take the plunge, you can also partition your hard drive and add a linux distribution as a second operating system.
+
+If the install guides for Anaconda fail, and some Googling leads to nothing of utility, I highly suggest running with a cloud-based option.
 
 ##Editor
 
@@ -67,6 +84,14 @@ which you can save to your *filesystem* using the editor.
 ##Running code
 
 Now that you know how to write Python scripts, it's time to learn how to run them using Python.
+
+###Linux
+Open a terminal.
+
+To open the interpreter, enter `python`
+
+To run a script enter `python <script>.py` where `<script>.py` is the path to the script.
+
 
 ###Mac
 
@@ -111,19 +136,13 @@ Then, open the terminal / command prompt, and run `pip install module`, where `m
 
 ##Python in the cloud
 
-When you have trouble getting Python up and running, or if you have Windows and
-would like to use a Unix environment, then there is an alternative: using your browser.
-There are several possibilities, but to be on the same page, I suggest you use [c9.io Cloud 9].
-Cloud 9 will host your development environment on the cloud for free.
+When you have trouble getting Python up and running, or if you have Windows and would like to use a Unix environment, then there is an alternative: using your browser.
 
-Please create an account at [Cloud 9](http://c9.io) if you are not able to run Python locally,
-so you can at least get started.
+One option is [AWS](https://aws.amazon.com/).
 
-##Windows Users
+If anyone has other suggestions, I am open to them.
 
-If you are a Windows user and are serious about taking this *and* other computer classes, I recommend using the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).  In general, much scientific computing is done on clusters running some form of Linux.  The sooner you start using Linux, the better.
 
-If the install guides for Anaconda fail, and some Googling leads to nothing of utility, I highly suggest running with a cloud-based option.
 
 ##Farmshare
-Another option available to everyone is [farmshare](https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/Main_Page). You simply need to `ssh` in, and you will have a full working installation of python. This requires some Linux skills, so follow [this guide](https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide) to getting started.
+Another option available to everyone is [farmshare](https://srcc.stanford.edu/farmshare2). You simply need to `ssh` in, and you will have a full working installation of python. This requires some Linux skills, so follow [this guide](https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/User_Guide) to getting started.
