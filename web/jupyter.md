@@ -25,7 +25,7 @@ From a terminal:
 jupyter notebook
 ```
 
-This should launch a notebook server on your computer, and open a tab on your browser.
+This should launch a notebook server on your computer, and open a tab on your browser.  You can then navigate to the folder holding the notebook you'd like to run.  Alternatively, you first navigate to the folder you want to be in, then launch the notebook server.
 
 **Note** You can launch Jupyter from the Anaconda launcher.  This may work, but I advise that you don't rely on the launcher and instead do it from a terminal.
 
