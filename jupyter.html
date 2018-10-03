@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CME 193 - Scientific Python</title>
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/highlight.tomorrow-night.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="./">
+                CME 193 - Scientific Python
+                <small class="hidden-xs hidden-sm">
+                    Stanford University
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                                                    <p class="text-muted">
+                                Course Information
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="./index.html">
+                                            Course Description
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="./syllabus.html">
+                                            Syllabus
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="./lectures.html">
+                                            Lectures
+                                        </a>
+                                    </li>
+                                                                    <li class="">
+                                        <a href="./homework.html">
+                                            Homework
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Other Links
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="./getstarted.html">
+                                            Getting Started
+                                        </a>
+                                    </li>
+                                                                    <li class="active">
+                                        <a href="./jupyter.html">
+                                            Jupyter
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        
+                    </nav>
+
+                
+                <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <p><strong>note</strong> all commands on this page are invoked from a bash shell (terminal), not from an interactive Python session.</p>
+<h1 id="jupyter-notebooks">Jupyter Notebooks</h1>
+<p><a href="https://jupyter.org/">Jupyter notebooks</a> are used to mix code and markdown (for exposition) in a single place.</p>
+<p>Jupyter comes bundled with Anaconda, but you can download it for whatever python you are using using <code>pip</code> (doens't have to be anaconda python).</p>
+<p>From a terminal:</p>
+<pre><code class="language-bash">pip install jupyter</code></pre>
+<p>Note that Jupyter is <strong>not</strong> Python.  You can use python in a variety of other ways (e.g., through the command line).  Additionally, you can use Jupyter notebooks with other programming languages.</p>
+<h2 id="launching-jupyter">Launching Jupyter</h2>
+<p>Once you have Jupyter installed, you can launch a notebook server.</p>
+<p>From a terminal:</p>
+<pre><code class="language-bash">jupyter notebook</code></pre>
+<p>This should launch a notebook server on your computer, and open a tab on your browser.</p>
+<p><strong>Note</strong> You can launch Jupyter from the Anaconda launcher.  This may work, but I advise that you don't rely on the launcher and instead do it from a terminal.</p>
+<h1 id="using-jupyter-with-a-conda-virutal-environment">Using Jupyter with a Conda virutal environment</h1>
+<p>You don't need to install Jupyter in every virtual environment.  However, you do need to install a <code>ipykernel</code> for every virtual environment.</p>
+<p>First, you may wish to install <code>nb_conda</code></p>
+<p>Next, you need to install an <code>ipykernel</code> for your virtual environment.  This looks like the following:</p>
+<p>From a terminal:</p>
+<pre><code class="language-bash">conda install nb_conda
+source activate cme193 # cme193 virtual env
+conda install ipykernel # installs a python kernel for this environment</code></pre>
+<p>Now, when you launch a Jupyter notebook server (even without your environment activated), you should see a <code>Python [conda env:cme193]</code> option in the kernel menu.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yandex.st/highlightjs/7.5/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

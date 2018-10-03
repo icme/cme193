@@ -76,7 +76,7 @@ A script is a simple file with text, such as
 ```python
 a = 'Hello,'
 b = 'world!'
-print a + ' ' + b
+print(a + ' ' + b)
 ```
 
 which you can save to your *filesystem* using the editor.

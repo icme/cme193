@@ -31,6 +31,9 @@ menu:
         other:
             name: Other Links
             items:
-                get_started: 
+                get_started:
                     text: Getting Started
                     relativeUrl: getstarted.html
+                jupyter:
+                    text: Jupyter
+                    relativeUrl: jupyter.html
