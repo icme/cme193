@@ -7,7 +7,7 @@ currentMenu: jupyter
 
 [Jupyter notebooks](https://jupyter.org/) are used to mix code and markdown (for exposition) in a single place.
 
-Jupyter comes bundled with Anaconda, but you can download it for whatever python you are using using `pip` (doens't have to be anaconda python).
+Jupyter comes bundled with Anaconda, but you can download it for whatever python you are using using `pip` (doesn't have to be anaconda python).
 
 From a terminal:
 ```bash
@@ -31,7 +31,7 @@ This should launch a notebook server on your computer, and open a tab on your br
 
 # Using Jupyter with a Conda virutal environment
 
-You don't need to install Jupyter in every virtual environment.  However, you do need to install a `ipykernel` for every virtual environment.
+You don't need to install Jupyter in every virtual environment.  However, you do need to install a `ipykernel` for every virtual environment.  This is what lets Jupyter know how to run this version of Python.
 
 First, you may wish to install `nb_conda`
 
