@@ -21,7 +21,9 @@ Instructor:
 
 Assistant: Rahul Sarkar (`rsarkar {at} stanford {dot} edu`)
 
-Office hours: by appointment for now, with scheduled time TBA.
+Office hours:
+* Brad - Thurs 12-1:30 PM (Huang Basement), or by appointment
+* Rahul - Mon 12-1 PM (Huang Basement)
 
 ## Prerequisites
 ### Programming
