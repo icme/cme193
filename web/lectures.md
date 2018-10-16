@@ -12,7 +12,12 @@ Please check regularly, as lectures are added as we progress.
 3. SciPy - Sparse Linear Algebra [[ipynb](./nb/2018_fall/Lecture_3_scipy.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture_3_scipy.ipynb)]
 4. SciPy - Optimization [[ipynb](./nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy-InClass.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy-InClass.ipynb)]
 Complete version [[ipynb](./nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy.ipynb)]
-
+5. Pandas
+[[ipynb](./nb/2018_fall/Lecture5-Pandas.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-Pandas.ipynb)] Exercise [[ipynb](./nb/2018_fall/Lecture5-supplement.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-supplement.ipynb)] Data [[iris.csv](./nb/data/iris.csv)] [[co2_mm_mlo.txt](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt)]
+6. Scikit-learn
 
 ---
-Content from the Spring 2016 offering of the course can be found [here](https://github.com/icme/cme193/tree/gh-pages/nb/2016_spring/)
+
+Content from previous offerings of the course (as-is)
+* [Spring 2018](https://github.com/icme/cme193/tree/gh-pages/nb/2018_spring/)
+* [Spring 2016](https://github.com/icme/cme193/tree/gh-pages/nb/2016_spring/)
