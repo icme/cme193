@@ -13,7 +13,7 @@ Please check regularly, as lectures are added as we progress.
 4. SciPy - Optimization [[ipynb](./nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy-InClass.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy-InClass.ipynb)]
 Complete version [[ipynb](./nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture4-Optimization-Using-Python-SciPy.ipynb)]
 5. Pandas
-[[ipynb](./nb/2018_fall/Lecture5-Pandas.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-Pandas.ipynb)] Exercise [[ipynb](./nb/2018_fall/Lecture5-supplement.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-supplement.ipynb)] Data [[iris.csv](./nb/data/iris.csv)] [[co2_mm_mlo.txt](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt)]
+[[ipynb](./nb/2018_fall/Lecture5-Pandas.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-Pandas.ipynb)] Exercise [[ipynb](./nb/2018_fall/Lecture5-supplement.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-supplement.ipynb)][[solution](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture5-supplement-solution.ipynb)] Data [[iris.csv](./nb/2018_fall/data/iris.csv)] [[co2_mm_mlo.txt](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt)]
 6. Scikit-learn
 
 ---
