@@ -17,6 +17,7 @@ Complete version [[ipynb](./nb/2018_fall/Lecture4-Optimization-Using-Python-SciP
 6. Scikit-learn [[ipynb](./nb/2018_fall/Lecture6-Scikit-learn.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture6-Scikit-learn.ipynb)] Exercise [[ipynb](./nb/2018_fall/Lecture6-supplement.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture6-supplement.ipynb)][[solution](./nb/2018_fall/Lecture6-supplement-solution.ipynb)][[solution-github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture6-supplement-solution.ipynb)]
 7. ORTools - Optimization [[ipynb](./nb/2018_fall/Lecture7-Optimization-Using-Python-ORTools-InClass.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture7-Optimization-Using-Python-ORTools-InClass.ipynb)] Complete version [[ipynb](./nb/2018_fall/Lecture7-Optimization-Using-Python-ORTools.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture7-Optimization-Using-Python-ORTools.ipynb)]
 8. OOP/Autodiff/PyTorch [[ipynb](./nb/2018_fall/Lecture8.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture8.ipynb)]
+
 ---
 
 Content from previous offerings of the course (as-is)
