@@ -9,4 +9,4 @@ Homework will be posted on this page when it is assigned.
 ---
 
 1. Homework 1 - Due 10/16 at 10:30 AM [[pdf](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw1/hw1.pdf)][[sbm.csv](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw1/sbm.csv)][[solution](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw1/solution/)]
-2. Homework 2 - Due 10/25 at 10:30 AM [[pdf](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw2/hw2.pdf)] [[UCI Abalone](https://archive.ics.uci.edu/ml/datasets/abalone)] [[data](https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data)]  [[data -- mirror](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw2/abalone.data)]
+2. Homework 2 - Due 10/25 at 10:30 AM [[pdf](https://github.com/icme/cme193/raw/gh-pages/hw/2018_fall/hw2/hw2.pdf)] [[UCI Abalone](https://archive.ics.uci.edu/ml/datasets/abalone)] [[data](https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data)] [[solution](https://github.com/icme/cme193/tree/gh-pages/hw/2018_fall/hw2/solution)]
