@@ -1,0 +1,175 @@
+\documentclass{article}
+\newcommand{\assgnnum}{2}
+\newcommand{\duedate}{October 25, 10:30 AM}
+
+\usepackage{amsmath}
+%\usepackage{fullpage}
+\usepackage{amssymb}
+%\usepackage{bbm}
+\usepackage{fancyhdr}
+%\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex,colorlinks=true, urlcolor = blue]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\definecolor{thegreen}{rgb}{0,.5,0}
+\definecolor{comment-green}{rgb}{0,.3,0}
+\definecolor{theblue}{rgb}{0,0,.8}
+\definecolor{light-gray}{gray}{0.98}
+\definecolor{comment-color}{rgb}{0,0,.8}
+\definecolor{string-color}{rgb}{0,.75,0}
+\definecolor{border-blue}{rgb}{0,0,.6}
+
+\lstset{% use our version of highlighting
+  language=python,      % using python
+  keywordstyle={\color{teal}\bfseries},          % keywords
+  commentstyle=\color{comment-color},         % comments
+  stringstyle=\color{string-color},                   %strings
+}
+
+\lstset{
+  basicstyle={\ttfamily\normalsize},  % use font and smaller size
+  basewidth={0.5em,0.5em},
+  showstringspaces=false,                   % do not emphasize spaces in strings
+  tabsize=2,                                % number of spaces of a TAB
+  aboveskip={0\baselineskip},               % a bit of space above
+  columns=fixed,                            % nice spacing
+}
+
+
+\oddsidemargin 0in \evensidemargin 0in
+\topmargin -0.5in \headheight 0.25in \headsep 0.25in
+\textwidth 6.5in \textheight 9in
+\parskip 6pt \parindent 0in \footskip 20pt
+
+% set the header up
+\fancyhead{}
+\fancyhead[L]{CME193: Homework \assgnnum}
+\fancyhead[R]{Due: \duedate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\headrulewidth{0.4pt}
+\setlength\headheight{15pt}
+
+\newcommand{\p}{\ensuremath{\mathbf{P}}}
+\renewcommand{\Pr}[1]{\ensuremath{\p \left \{ #1 \right \}}}
+\newcommand{\nti}{\ensuremath{n \to \infty}}
+\newcommand{\I}{\ensuremath{\operatorname{I}}}
+\newcommand{\One}[1]{\ensuremath{\mathbbm{1}_{\left \{ #1 \right \}}}}
+\newcommand{\E}{\ensuremath{\mathbf{E}}}
+\newcommand{\Ex}[2][]{\ensuremath{\E_{#1} \left[ #2 \right]}}
+\newcommand{\var}{\ensuremath{\operatorname{Var}}}
+\newcommand{\cov}{\ensuremath{\operatorname{Cov}}}
+\newcommand{\F}{\ensuremath{\mathcal{F}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\NormRV}[2]{\ensuremath{\operatorname{N}\left(#1, #2\right)}}
+\newcommand{\BetaRV}[2]{\ensuremath{\operatorname{Beta}\left(#1, #2\right)}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\bb}{\mathbf{b}}
+
+\newcounter{points}
+\setcounter{points}{0}
+\newcounter{bonuspoints}
+\setcounter{bonuspoints}{0}
+
+\newcommand\setpoints[1]{\addtocounter{points}{#1}(#1 points)}
+\newcommand\setpoint{\addtocounter{points}{1}(1 point)}
+\newcommand\setbonuspoints[1]{\addtocounter{bonuspoints}{#1}(#1 bonus points)}
+\newcommand\setbonuspoint{\addtocounter{bonuspoints}{1}(1 bonus point)}
+
+\newcommand\printpoints{Total number of points: \value{\thepoints}}
+
+\newcommand{\eqD}{\ensuremath{\overset{\mathcal{D}}{=}}}
+
+\setlength{\parindent}{0in}
+
+\begin{document}
+
+\pagestyle{fancy}
+%\vspace*{15pt}
+
+\section*{Overview}
+
+In this assignment, you'll practice some data manipulation in pandas, and perform a simple regression task using the Abalone data set from the UCI repository
+
+Abalone are a type of mollusk (you may have eaten one before).  Each row of this data set is an individual abalone, with a variety of measurements.  You can learn about the age of an abalone by counting rings in its shell (kind of like counting tree rings).
+
+https://archive.ics.uci.edu/ml/datasets/Abalone
+
+This link describes the data.  Take a look at the attribute information so you know what each column is referring to.
+
+Please put all your code into a single script {\tt hw2.py}, which will generate the image {\tt regression.png}.  Submit both files to canvas.
+
+Please submit the following files to Canvas:
+\begin{enumerate}
+\item {\tt hw2.py} - a script with all your code, which will generate the figure
+\item {\tt regression.png}
+\end{enumerate}
+
+ Additionally, {\bf please include comments in your code} to explain what you're doing (doesn't have to be detailed, but should be clear).
+
+
+\section{Read the data into a DataFrame}
+
+use pandas to read the data at this link into a DataFrame:\\ https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data
+
+Hints:
+\begin{itemize}
+\item decide if {\tt pd.read\_table} or {\tt pd.read\_csv} is more appropriate.
+\item you can pass the url provided as a string (like in the Lecture 5 exercise)
+\item You'll want to pass in at least 2 keyword arguments:
+\begin{itemize}
+\item {\tt names} - a list of column names ({\tt `sex', `length', `diam', `height', `wt\_whole', `wt\_shucked', `wt\_viscera', `wt\_shell', `rings'})
+\item {\tt index\_col=False} - indicates that pandas should just create an index for each entry (we don't have ids for the data)
+\end{itemize}
+\end{itemize}
+
+\section{Set up the data for a regression problem}
+
+The problem we're going to try to solve is to predict the number of rings in an abalone shell (the {\tt `rings'} column) from the other features. This is a proxy for the age of the animal.
+
+This means we want a response vector $y$ that contains the data in the `rings' column, and a design matrix $X$ that contains all the data we'll use to predict the response (the other columns).
+
+Use the {\tt pasty} library's {\tt dmatrices} function to form your data and response matrices (see lecture 6 for an example).
+
+Hints:
+\begin{itemize}
+\item Since `sex' is categorical you'll want to use {\tt `C(sex)'} in your model specification.
+\end{itemize}
+
+you'll see that {\tt X} has a column called `Intercept'.  We will not need this column, so remove it from the dataframe:
+
+{\tt X.drop(X[["Intercept"]], axis=1, inplace=True)}
+
+\section{Split the data into train and test sets}
+
+Now, we're going to start using Scikit learn.
+
+Split your data into train and test sets (See lecture 6 for an example)
+
+Set your test size to be 30\% of the data
+
+\section{Fit a Linear Regression model to the data}
+
+\begin{enumerate}
+\item Use Scikit learn's linear regression class to fit the model:
+
+{\tt from sklearn.linear\_model import LinearRegression}
+\item Use your training data to fit the model
+\item Predict the number of rings in your test data using the {\tt predict} method.
+\item create a scatter plot of your prediction vs. the true number of rings.  Save this figure as {\tt regression.png} and sumbit it with your homework
+\end{enumerate}
+
+\section{(Bonus) Try another regression classifier}
+
+Pick another regression classifier (e.g., try ridge, lasso, decision trees, nearest neighbors, ...) and repeat parts 3 and 4.  If you do this, name your image after the classifier you used e.g., {\tt lasso.png}
+
+
+
+\end{document}

@@ -1,0 +1,198 @@
+\documentclass{article}
+\newcommand{\assgnnum}{1}
+\newcommand{\duedate}{October 16, 10:30 AM}
+
+\usepackage{amsmath}
+%\usepackage{fullpage}
+\usepackage{amssymb}
+%\usepackage{bbm}
+\usepackage{fancyhdr}
+%\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex,colorlinks=true, urlcolor = blue]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\definecolor{thegreen}{rgb}{0,.5,0}
+\definecolor{comment-green}{rgb}{0,.3,0}
+\definecolor{theblue}{rgb}{0,0,.8}
+\definecolor{light-gray}{gray}{0.98}
+\definecolor{comment-color}{rgb}{0,0,.8}
+\definecolor{string-color}{rgb}{0,.75,0}
+\definecolor{border-blue}{rgb}{0,0,.6}
+
+\lstset{% use our version of highlighting
+  language=python,      % using python
+  keywordstyle={\color{teal}\bfseries},          % keywords
+  commentstyle=\color{comment-color},         % comments
+  stringstyle=\color{string-color},                   %strings
+}
+
+\lstset{
+  basicstyle={\ttfamily\normalsize},  % use font and smaller size
+  basewidth={0.5em,0.5em},
+  showstringspaces=false,                   % do not emphasize spaces in strings
+  tabsize=2,                                % number of spaces of a TAB
+  aboveskip={0\baselineskip},               % a bit of space above
+  columns=fixed,                            % nice spacing
+}
+
+
+\oddsidemargin 0in \evensidemargin 0in
+\topmargin -0.5in \headheight 0.25in \headsep 0.25in
+\textwidth 6.5in \textheight 9in
+\parskip 6pt \parindent 0in \footskip 20pt
+
+% set the header up
+\fancyhead{}
+\fancyhead[L]{CME193: Homework \assgnnum}
+\fancyhead[R]{Due: \duedate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\headrulewidth{0.4pt}
+\setlength\headheight{15pt}
+
+\newcommand{\p}{\ensuremath{\mathbf{P}}}
+\renewcommand{\Pr}[1]{\ensuremath{\p \left \{ #1 \right \}}}
+\newcommand{\nti}{\ensuremath{n \to \infty}}
+\newcommand{\I}{\ensuremath{\operatorname{I}}}
+\newcommand{\One}[1]{\ensuremath{\mathbbm{1}_{\left \{ #1 \right \}}}}
+\newcommand{\E}{\ensuremath{\mathbf{E}}}
+\newcommand{\Ex}[2][]{\ensuremath{\E_{#1} \left[ #2 \right]}}
+\newcommand{\var}{\ensuremath{\operatorname{Var}}}
+\newcommand{\cov}{\ensuremath{\operatorname{Cov}}}
+\newcommand{\F}{\ensuremath{\mathcal{F}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\NormRV}[2]{\ensuremath{\operatorname{N}\left(#1, #2\right)}}
+\newcommand{\BetaRV}[2]{\ensuremath{\operatorname{Beta}\left(#1, #2\right)}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\bb}{\mathbf{b}}
+
+\newcounter{points}
+\setcounter{points}{0}
+\newcounter{bonuspoints}
+\setcounter{bonuspoints}{0}
+
+\newcommand\setpoints[1]{\addtocounter{points}{#1}(#1 points)}
+\newcommand\setpoint{\addtocounter{points}{1}(1 point)}
+\newcommand\setbonuspoints[1]{\addtocounter{bonuspoints}{#1}(#1 bonus points)}
+\newcommand\setbonuspoint{\addtocounter{bonuspoints}{1}(1 bonus point)}
+
+\newcommand\printpoints{Total number of points: \value{\thepoints}}
+
+\newcommand{\eqD}{\ensuremath{\overset{\mathcal{D}}{=}}}
+
+\setlength{\parindent}{0in}
+
+\begin{document}
+
+\pagestyle{fancy}
+%\vspace*{15pt}
+
+\section*{Overview}
+
+In this assignment, you'll read sparse matrices from files, implement a class, and implement a simple spectral embedding algorithm.
+
+All your code should be put in a script {\tt hw1.py} which will be submitted on Canvas.
+
+Please submit the following files to Canvas:
+\begin{enumerate}
+\item {\tt hw1.py} - a script with all your code, which will generate the figure
+\item {\tt sbm.png}
+\end{enumerate}
+
+{\bf Please use the function, class and file names specified.}  It will be easier to read your code if everyone uses the same conventions.  Additionally, {\bf please include comments in your code} to explain what you're doing (doesn't have to be detailed, but should be clear). 
+
+
+\section{Review of Graph Terminology}
+
+A graph $G(V,E)$ is a set of vertices $V$ and edges $E\subset V\times V$.  We'll denote the number of vertices in a graph by $n$, and assign each vertex a number in $0,1,\dots, n-1$.
+
+The adjacency matrix of a graph is a $n\times n$ matrix $A$, where
+$$A_{i,j} = \begin{cases}
+1 & (i,j) \in E\\
+0 & (i,j) \notin E
+\end{cases}$$
+
+
+\section{Read A Sparse Matrix From a File}
+
+{\tt sbm.csv} contains the adjacency matrix of a graph in the following format: each row of the file contains the contents for a single non-zero of the adjacency matrix:
+
+{\tt
+row (int), column (int), value (float)
+}
+
+
+Write a function that will take a file name as input and return a {\tt scipy.sparse.coo\_matrix}
+
+{\bf call this function {\tt read\_coo} }
+
+If you prefer to work with another sparse matrix type, you can always convert once you have created a COO matrix.
+
+\section{Create A Sparse + Rank-1 Matrix Class}
+
+In the next part, it will be convenient to have a class to represent matrices of the form
+$$ S + \alpha uv^T$$
+where $S$ is a sparse matrix, $u, v$ are vectors, and $\alpha$ is a scalar.  This allows us to use the structure of the matrix to avoid forming a dense array.
+
+{\bf use the class name {\tt sparse\_rank1} } 
+
+Write a class definition that
+\begin{itemize}
+\item initializes an object given a sparse matrix $S$, numpy arrays $u$ and $v$ and a float $\alpha$ (store each of these inputs).  Give the object another field {\tt shape}, which is set to be the same as {\tt S.shape}
+\item implements a {\tt dot} method, which performs matrix-vector multiplication
+\end{itemize}
+
+\section{Power Method}
+In lecture 2, you did an exercise in which you implemented power method for a matrix.  Recall, this function finds the eigenpair $(\lambda, v)$ with largest $\lambda$ such that $Av = \lambda v$ for a matrix $A$.  Note that the implementation only required that $A$ have a {\tt dot} method that performed matrix-vector multiplication, so you can use it with your new matrix class.
+
+Import this function to your script, and modify it if needed to work with your {\tt sparse\_rank1} matrix class.
+
+{\bf call this function {\tt power\_method} }
+
+\section{Spectral Embedding}
+
+{\tt sbm.csv} contains the adjacency matrix of a graph generated using the stochastic block model.  Load this into a sparse matrix {\tt A}.
+
+A spectral embedding assigns vertices of a graph coordinates in Euclidean space that can be used to visualize the graph.  One way to generate a spectral embedding is to calculate the top $k$ vectors of the adjacency matrix, and embed in $\mathbb{R}^k$.  We'll do this for $k=2$.
+
+Find the top two eigenvectors of adjacency matrix using the power method using the following deflation algorithm:
+\begin{enumerate}
+\item Calculate the top eigenpair $(\lambda_1, v_1)$ of $A$
+\item Calculate the top eigenpair $(\lambda_2, v_2)$ of $(A - \lambda_1 v_1 v_1^T)$
+\end{enumerate}
+You can either wrap this in a function, or just execute it directly in the script.
+
+Use PyPlot to generate a scatter plot of $v_1$ vs $v_2$.  {\bf Save this plot as {\tt sbm.png} and submit it on Canvas.}
+
+Note that this is a very simplified version of a specific spectral clustering algorithm.  If you want to know more about this spectral clustering setup, I recommend the paper:
+
+``Robust and efficient multi-way spectral clustering'' by A. Damle, V. Minden, and L. Ying. (2017) \\
+{\tt https://arxiv.org/abs/1609.08251}
+
+
+
+
+\section*{Hints}
+
+You don't need to use the hints to complete the assignment - it's ok if you want to use functions other than the ones mentioned.
+
+\begin{itemize}
+\item Reading a file: check out {\tt numpy.readtxt}
+\item To specify a data type in a numpy array, pass in a type e.g. {\tt np.array(v, int)}
+\item $ (S + \alpha uv^T) x = Sx + \alpha u (v^T x)$
+\item Save a figure: check out {\tt savefig} in pyplot
+\item You should see 2 clusters when you generate the figure
+\end{itemize}
+
+
+
+
+
+\end{document}
