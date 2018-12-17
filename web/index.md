@@ -11,19 +11,16 @@ This course is recommended for students who are familiar with programming at lea
 **This course starts the second week of the quarter on Tuesday 10/2**
 
 CME 193 - Introduction to Scientific Python - Winter 2019
-- Location: [420-040](https://campus-map.stanford.edu/?srch=420-040)
-- Time: Tu/Th 10:30 AM - 11:50 AM
+- Location: [Hewlett Teaching Center 201](https://campus-map.stanford.edu/?srch=Hewlett+Teaching+Center+201)
+- Time: Tu/Th 9:00 AM - 10:20 AM
 - Units: 1
 - Grading: Credit/No-Credit
 
 Instructor:
-[Brad Nelson](https://stanford.edu/~bjnelson/) (`bradnelson {at} stanford {dot} edu`)
-
-Assistant: Rahul Sarkar (`rsarkar {at} stanford {dot} edu`)
+Anjan Dwaraknath (`anjandn {at} stanford {dot} edu`)
 
 Office hours:
-* Brad - Thurs 12-1:30 PM (Huang Basement), or by appointment
-* Rahul - Mon 12-1 PM (Huang Basement)
+* Anjan - Thurs 10:20-12:00 PM (Huang Basement), or by appointment
 
 ## Prerequisites
 ### Programming
