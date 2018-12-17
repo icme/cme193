@@ -10,7 +10,7 @@ This course is recommended for students who are familiar with programming at lea
 
 **This course starts the second week of the quarter on Tuesday 10/2**
 
-CME 193 - Introduction to Scientific Python - Fall 2018
+CME 193 - Introduction to Scientific Python - Winter 2019
 - Location: [420-040](https://campus-map.stanford.edu/?srch=420-040)
 - Time: Tu/Th 10:30 AM - 11:50 AM
 - Units: 1
