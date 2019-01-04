@@ -8,7 +8,7 @@ This course is recommended for students who are familiar with programming at lea
 
 ## Course information
 
-**This course starts the second week of the quarter on Tuesday 10/2**
+**This course starts the second week of the quarter on Tuesday 1/15**
 
 CME 193 - Introduction to Scientific Python - Winter 2019
 - Location: [Hewlett Teaching Center 201](https://campus-map.stanford.edu/?srch=Hewlett+Teaching+Center+201)
@@ -40,7 +40,7 @@ This is a course on scientific computing with Python.  This will assume you
 
 ## Format
 
-This short course runs for four weeks of the quarter (starting 10/2) and is offered each quarter during the academic year.
+This short course runs for four weeks of the quarter (starting 1/15) and is offered each quarter during the academic year.
 
 Lectures will be interactive using [Jupyter Notebooks](http://jupyter.org/) with a focus on learning by example, and assignments will be application-driven.
 
