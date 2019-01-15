@@ -7,7 +7,7 @@ currentMenu: lectures
 Disclaimer: these lecture notebooks are subject to change and can be updated any time.
 Please check regularly, as lectures are added as we progress.
 
-1. Intro to Python, NumPy [[ipynb](./nb/2019_winter/Lecture_1.ipynb)] [[github](https://github.com/icme/cme193/blob/gh-pages/nb/2018_fall/Lecture_1.ipynb)]
+1. Intro to Python, NumPy [[ipynb](./nb/2019_winter/Lecture_1.ipynb)] [[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_1.ipynb)]
 
 ---
 
