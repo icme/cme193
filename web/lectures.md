@@ -9,6 +9,8 @@ Please check regularly, as lectures are added as we progress.
 
 1. Intro to Python, NumPy [[ipynb](./nb/2019_winter/Lecture_1.ipynb)] [[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_1.ipynb)]
 2. NumPy and Plotting [[ipynb](./nb/2019_winter/Lecture_2.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_2.ipynb)]
+3. Implementing an algorithm using NumPy, Classes and Objects [[ipynb](./nb/2019_winter/Lecture_3.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_3.ipynb)]
+
 
 
 ---
