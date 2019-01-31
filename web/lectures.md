@@ -12,6 +12,9 @@ Please check regularly, as lectures are added as we progress.
 3. Implementing an algorithm using NumPy, Classes and Objects [[ipynb](./nb/2019_winter/Lecture_3.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_3.ipynb)]
 4. SciPy [[ipynb](./nb/2019_winter/Lecture_4.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_4.ipynb)]
 5. Pandas [[ipynb](./nb/2019_winter/Lecture5-Pandas.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture5-Pandas.ipynb)][[exercise](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture5-supplement.ipynb)][[exercise-ipynb](./nb/2019_winter/Lecture5-supplement.ipynb)]
+6. Scikit-Learn [[ipynb](./nb/2019_winter/Lecture6-Scikit-learn.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture6-Scikit-learn.ipynb)][[exercise](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture6-supplement.ipynb)][[exercise-ipynb](./nb/2019_winter/Lecture6-supplement.ipynb)]
+
+Survey for choosing topics for last week : [[Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjYDypUzwhiEeyhNKcCIAeDThe95gcwf9xUrpqsBh48kTibQ/viewform?usp=sf_link)]
 
 
 
