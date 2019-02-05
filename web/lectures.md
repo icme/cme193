@@ -13,8 +13,7 @@ Please check regularly, as lectures are added as we progress.
 4. SciPy [[ipynb](./nb/2019_winter/Lecture_4.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture_4.ipynb)]
 5. Pandas [[ipynb](./nb/2019_winter/Lecture5-Pandas.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture5-Pandas.ipynb)][[exercise](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture5-supplement.ipynb)][[exercise-ipynb](./nb/2019_winter/Lecture5-supplement.ipynb)][[exercise-soln](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture5-supplement-solution.ipynb)][[exercise-soln-ipynb](./nb/2019_winter/Lecture5-supplement-solution.ipynb)]
 6. Scikit-Learn [[ipynb](./nb/2019_winter/Lecture6-Scikit-learn.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture6-Scikit-learn.ipynb)][[exercise](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture6-supplement.ipynb)][[exercise-ipynb](./nb/2019_winter/Lecture6-supplement.ipynb)][[exercise-soln](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture6-supplement-solution.ipynb)][[exercise-ipynb-soln](./nb/2019_winter/Lecture6-supplement-solution.ipynb)]
-
-Survey for choosing topics for last week : [[Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjYDypUzwhiEeyhNKcCIAeDThe95gcwf9xUrpqsBh48kTibQ/viewform?usp=sf_link)]
+7. NumPy Revision and Practice [[ipynb](./nb/2019_winter/Lecture7-Numpy-revision-and-practice.ipynb)][[github](https://github.com/icme/cme193/blob/gh-pages/nb/2019_winter/Lecture7-Numpy-revision-and-practice.ipynb)]
 
 
 
