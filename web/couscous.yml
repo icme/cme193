@@ -1,10 +1,11 @@
 template:
-    directory: .
+    #directory: .
+    directory: ../CouscousNativeTemplate-master
     # url: https://github.com/CouscousPHP/Template-Dark
 
 title: CME 193 - Scientific Python
 subTitle: Stanford University
-baseUrl: ./
+baseUrl: http://web.stanford.edu/class/cme193
 
 # The left menu bar
 menu:
@@ -21,19 +22,14 @@ menu:
                     text: Syllabus
                     # You can use relative urls
                     relativeUrl: syllabus.html
-                lectures:
-                    text: Lectures
-                    # Or absolute urls
-                    relativeUrl: lectures.html
+                # lectures:
+                #     text: Lectures
+                #     # Or absolute urls
+                #     relativeUrl: lectures.html
                 homework:
                     text: Homework
                     relativeUrl: homework.html
-        other:
-            name: Other Links
-            items:
                 get_started:
                     text: Getting Started
                     relativeUrl: getstarted.html
-                jupyter:
-                    text: Jupyter
-                    relativeUrl: jupyter.html
+                    

@@ -8,19 +8,14 @@ This course is recommended for students who are familiar with programming at lea
 
 ## Course information
 
-**This course starts the second week of the quarter on Tuesday 1/15**
-
-CME 193 - Introduction to Scientific Python - Winter 2019
-- Location: [Hewlett Teaching Center 201](https://campus-map.stanford.edu/?srch=Hewlett+Teaching+Center+201)
-- Time: Tu/Th 9:00 AM - 10:20 AM
-- Units: 1
-- Grading: Credit/No-Credit
-
-Instructor:
-Anjan Dwaraknath (`anjandn {at} stanford {dot} edu`)
-
-Office hours:
-* Anjan - Thurs 10:20-12:00 PM (Huang Basement), or by appointment
+CME 193 - Introduction to Scientific Python - Spring 2019
+- **Instructor:** Casey Chu (caseychu@stanford.edu, but private post on Piazza preferred)
+- **Location:** [420-041](http://campus-map.stanford.edu/?srch=420-041)
+- **Time:** Tuesdays/Thursdays 9-10:20AM for four weeks (Tuesday, April 9, 2019 to Thursday, May 2, 2019). 
+- **Units:** 1
+- **Grading:** Credit/No-Credit
+- **Piazza:** [http://piazza.com/stanford/spring2019/cme193](http://piazza.com/stanford/spring2019/cme193). 
+- **Office hours:** Tuesdays 1:30-3:30PM (Huang basement, either in the ICME lobby or directly outside)
 
 ## Prerequisites
 ### Programming
@@ -40,7 +35,7 @@ This is a course on scientific computing with Python.  This will assume you
 
 ## Format
 
-This short course runs for four weeks of the quarter (starting 1/15) and is offered each quarter during the academic year.
+This short course runs for four weeks of the quarter and is offered each quarter during the academic year.
 
 Lectures will be interactive using [Jupyter Notebooks](http://jupyter.org/) with a focus on learning by example, and assignments will be application-driven.
 
@@ -49,11 +44,7 @@ We'll typically devote some time during class to working on exercises, so you ca
 
 ## Grading
 
-This a 1-unit workshop style course, offered on a credit/no-credit basis.  To receive credit:
-* Come to class and participate (we know you may have occasional conflicts)
-* Make a reasonable attempt at the assignments (3 or 4 total)
-
-The goal is to give you some practice and experience with the content of the course, without overwhelming you with work.
+This a 1-unit workshop style course, offered on a credit/no-credit basis.  To receive credit, you must get at least 70% on *both* assignments, although I reserve the right to change the exact cutoff percentage as the assignments aren't finalized yet. The goal is to give you some practice and experience with the content of the course, without overwhelming you with work.
 
 ## Stanford Policies
 
@@ -61,4 +52,4 @@ The goal is to give you some practice and experience with the content of the cou
 This course is intended to be collaborative.  You can (and should) work with other students in class and on homework.  You should turn in your own solutions (don't copy others). If you worked closely with someone or found an answer on the web, please acknowledge the source of your solution.
 
 ### Students with Documented Disabilities
-Students with Documented Disabilities: Students who may need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE). Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty. Unless the student has a temporary disability, Accommodation letters are issued for the entire academic year. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations. The OAE is located at 563 Salvatierra Walk (phone: 723-1066, URL: https://oae.stanford.edu/).
+Students who may need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE). Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty. Unless the student has a temporary disability, Accommodation letters are issued for the entire academic year. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations. The OAE is located at 563 Salvatierra Walk (phone: 723-1066, URL: https://oae.stanford.edu/).
